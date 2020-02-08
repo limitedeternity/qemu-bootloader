@@ -5,6 +5,8 @@ call cls
 call sleep 
 mov si, GREET
 call print
+
+mov bx, 0 ; инициализируем bx как индекс для хранения ввода
 call get_input
 
 ; ------
@@ -12,7 +14,6 @@ call get_input
 get_input:
     mov si, ARROW
     call print
-    mov bx, 0 ; инициализируем bx как индекс для хранения ввода
     call input_processing
     jmp get_input
 
