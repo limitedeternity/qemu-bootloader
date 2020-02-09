@@ -1,4 +1,5 @@
 [org 0x7c00]
+[cpu 8086]
 [bits 16]
 
 call cls
