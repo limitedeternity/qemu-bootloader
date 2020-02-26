@@ -1,10 +1,6 @@
-> Programs and other data should be placed there to be persisted between reboots
+> Programs and other data should be placed there to be persisted between reboots. This folder auto-mounts to `/home/tc/data`.
 
-**Mount**:
-
-![Screenshot at Feb 13 14-52-08](https://user-images.githubusercontent.com/24318966/74432930-7e455c80-4e70-11ea-8156-eecca8fdc3df.png)
-
-**Necessary libs**:
+**Packages used for program compilation**:
 
 `$ tce-load -wi compiletc`
 
