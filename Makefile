@@ -4,7 +4,7 @@ build:
 	cat bootsect.bin preboot.bin > bootloader.bin
 
 pull_core:
-	curl -SL http://tinycorelinux.net/11.x/x86/release/Core-current.iso -o Core.iso
+	wget https://github.com/limitedeternity/qemu-bootloader/releases/download/v1.0.0/Core.iso
 
 run:
 	qemu-system-i386 -m 256M -rtc base=localtime -drive file=bootloader.bin,index=0,media=disk,format=raw -drive file=Core.iso,index=1,media=cdrom,format=raw -drive file=fat:rw:data/,index=2,format=raw
